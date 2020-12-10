@@ -1,0 +1,10 @@
+
+https://giasutinhoc.vn/database/co-so-du-lieu/co-so-du-lieu-trong-mysql-bai-6-2/
+
+
+https://www.w3resource.com/mysql-exercises/
+https://www.w3resource.com/mysql-exercises/basic-simple-exercises/
+
+
+https://www.w3schools.com/python/python_mysql_select.asp
+https://www.w3schools.com/python/python_mysql_getstarted.asp
