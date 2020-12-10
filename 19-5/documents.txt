@@ -1,0 +1,6 @@
+https://www.w3resource.com/sqlite-exercises/sqlite-restricting-and-sorting-data-exercises.php
+https://www.w3resource.com/sqlite-exercises/sqlite-join-exercises.php
+https://www.w3resource.com/sqlite-exercises/sqlite-subquery-exercises.php
+
+
+https://code.visualstudio.com/docs/python/python-tutorial
