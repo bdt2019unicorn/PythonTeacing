@@ -4,3 +4,7 @@ https://www.w3resource.com/sqlite-exercises/sqlite-subquery-exercises.php
 
 
 https://code.visualstudio.com/docs/python/python-tutorial
+
+
+
+https://www.youtube.com/watch?v=FVpho_UiDAY
