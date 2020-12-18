@@ -6,5 +6,5 @@ https://www.w3resource.com/sqlite-exercises/sqlite-subquery-exercises.php
 https://code.visualstudio.com/docs/python/python-tutorial
 
 
-
+Homework - watch the video and create a the application base on the video 
 https://www.youtube.com/watch?v=FVpho_UiDAY
