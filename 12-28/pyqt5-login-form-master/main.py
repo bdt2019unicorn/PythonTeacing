@@ -3,6 +3,8 @@ from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QDialog, QApplication
 from PyQt5.uic import loadUi
 
+import sqlite3
+
 class Login(QDialog):
     def __init__(self):
         super(Login,self).__init__()
@@ -14,7 +16,19 @@ class Login(QDialog):
     def loginfunction(self):
         email=self.email.text()
         password=self.password.text()
-        print("Successfully logged in with email: ", email, "and password:", password)
+
+        connection = sqlite3.connect("cosudulieu.db")
+        sql = "SELECT * FROM nguoidung WHERE dangnhap=\'" + email + "\' AND matkhau=\'" + password + "\'"
+        table = connection.execute(sql)
+        list = []
+        for row in table: 
+            list.append(row)
+        connection.close()
+
+        if len(list)==1: 
+            print("Successfully logged in with email: " + email + "and password:" + password)
+        else: 
+            print("Khong co nguoi dung hoac dang nhap sai mat khau")
 
     def gotocreate(self):
         createacc=CreateAcc()
@@ -33,6 +47,13 @@ class CreateAcc(QDialog):
         email = self.email.text()
         if self.password.text()==self.confirmpass.text():
             password=self.password.text()
+
+            connection = sqlite3.connect("cosudulieu.db")
+            sql = "INSERT INTO nguoidung(dangnhap, matkhau) VALUES (\'" + email + "\', \'" + password + "\')"
+            connection.execute(sql)
+            connection.commit()
+            connection.close()
+
             print("Successfully created acc with email: ", email, "and password: ", password)
             login=Login()
             widget.addWidget(login)
